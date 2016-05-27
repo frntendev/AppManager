@@ -1,0 +1,13 @@
+extends layout
+
+block body
+  div
+    h2.title مدیریت اپلیکیشن ساوش
+      input.pull-right(type="text", ng-model="search",placeholder="جستجو")
+    ul.nav.navbar-nav
+      li
+        a(href='/') خانه
+      li
+        a(href='/addPost') گذاشتن پست
+
+    div.view(ng-view)
